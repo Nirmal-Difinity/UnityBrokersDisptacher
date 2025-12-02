@@ -92,7 +92,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1287,857.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1287,629.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_InputData" />
     </Sequence.Variables>
@@ -114,36 +114,36 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="UnotyBrokers_Fidelity">
+            <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="UnityBrokers_Fidelity">
               <ui:AddQueueItem.ItemInformation>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Client Type&quot;">[CurrentRow("Client Type").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Assured Name&quot;">[CurrentRow("Assured Name").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Mobile Number&quot;">[CurrentRow("Mobile Number").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Email&quot;">[CurrentRow("Email").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Nationality">[CurrentRow("Nationality").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;DateofBirth">[CurrentRow("DateofBirth").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Age">[CurrentRow("Age").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Gender">[CurrentRow("Gender").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Chasis Number">[CurrentRow("Chasis Number").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Date of First Registration">[CurrentRow("Date of First Registration").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;License place of issue">[CurrentRow("License place of issue").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Place of registration">[CurrentRow("Place of registration").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;License issue date">[CurrentRow("License issue date").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Years without claim">[CurrentRow("Years without claim").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Agency Type">[CurrentRow("Agency Type").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Vehicle Modified">[CurrentRow("Vehicle Modified").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Valid insurance policy">[CurrentRow("Valid insurance policy").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Previous Policy typePrevious Policy type">[CurrentRow("Previous Policy type").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Emirates ID">[CurrentRow("Emirates ID").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Driving License No">[CurrentRow("Driving License No").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Expiry Date">[CurrentRow("Expiry Date").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Emirate">[CurrentRow("Emirate").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Profession">[CurrentRow("Profession").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Vehicle colour">[CurrentRow("Vehicle colour").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;TCF No">[CurrentRow("TCF No").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Engine Number">[CurrentRow("Engine Number").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;License issued authority">[CurrentRow("License issued authority").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="&quot;Previous policy expiry">[CurrentRow("Previous policy expiry").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Client Type">[CurrentRow("Client Type").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Assured Name">[CurrentRow("Assured Name").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Mobile Number">[CurrentRow("Mobile Number").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Email">[CurrentRow("Email").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Nationality">[CurrentRow("Nationality").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="DateofBirth">[CurrentRow("DateofBirth").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Age">[CurrentRow("Age").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Gender">[CurrentRow("Gender").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Chasis Number">[CurrentRow("Chasis Number").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Date of First Registration">[CurrentRow("Date of First Registration").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="License place of issue">[CurrentRow("License place of issue").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Place of registration">[CurrentRow("Place of registration").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="License issue date">[CurrentRow("License issue date").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Years without claim">[CurrentRow("Years without claim").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Agency Type">[CurrentRow("Agency Type").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Vehicle Modified">[CurrentRow("Vehicle Modified").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Valid insurance policy">[CurrentRow("Valid insurance policy").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Previous Policy type">[CurrentRow("Previous Policy type").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Emirates ID">[CurrentRow("Emirates ID").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Driving License No">[CurrentRow("Driving License No").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Expiry Date">[CurrentRow("Expiry Date").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Emirate">[CurrentRow("Emirate").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Profession">[CurrentRow("Profession").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Vehicle colour">[CurrentRow("Vehicle colour").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="TCF No">[CurrentRow("TCF No").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Engine Number">[CurrentRow("Engine Number").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="License issued authority">[CurrentRow("License issued authority").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Previous policy expiry">[CurrentRow("Previous policy expiry").ToString]</InArgument>
               </ui:AddQueueItem.ItemInformation>
             </ui:AddQueueItem>
           </Sequence>
