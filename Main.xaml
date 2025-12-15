@@ -98,7 +98,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1119,1555" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1125,857.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Fidelity" />
     </Sequence.Variables>
@@ -107,7 +107,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_7">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_27">
           <sap:WorkflowViewStateService.ViewState>
@@ -359,79 +359,70 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,633" sap2010:WorkflowViewState.IdRef="Sequence_4">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_Fidelity]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputData.xlsx" />
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Fidelity]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="452,453" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-            <ui:ForEachRow.Body>
-              <ActivityAction x:TypeArguments="sd:DataRow">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_2">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="UnityBrokers_Fidelity">
-                    <ui:AddQueueItem.ItemInformation>
-                      <InArgument x:TypeArguments="x:String" x:Key="Client Type">[CurrentRow("Client Type").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Assured Name">[CurrentRow("Assured Name").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Mobile Number">[CurrentRow("Mobile Number").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Email">[CurrentRow("Email").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Nationality">[CurrentRow("Nationality").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="DateofBirth">[CurrentRow("DateofBirth").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Age">[CurrentRow("Age").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Gender">[CurrentRow("Gender").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Chasis Number">[CurrentRow("Chasis Number").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Date of First Registration">[CurrentRow("Date of First Registration").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="License place of issue">[CurrentRow("License place of issue").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Place of registration">[CurrentRow("Place of registration").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="License issue date">[CurrentRow("License issue date").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Years without claim">[CurrentRow("Years without claim").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Agency Type">[CurrentRow("Agency Type").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Vehicle Modified">[CurrentRow("Vehicle Modified").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Valid insurance policy">[CurrentRow("Valid insurance policy").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Previous Policy type">[CurrentRow("Previous Policy type").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Emirates ID">[CurrentRow("Emirates ID").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Driving License No">[CurrentRow("Driving License No").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Expiry Date">[CurrentRow("Expiry Date").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Emirate">[CurrentRow("Emirate").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Profession">[CurrentRow("Profession").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Vehicle colour">[CurrentRow("Vehicle colour").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="TCF No">[CurrentRow("TCF No").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Engine Number">[CurrentRow("Engine Number").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="License issued authority">[CurrentRow("License issued authority").ToString]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="Previous policy expiry">[CurrentRow("Previous policy expiry").ToString]</InArgument>
-                    </ui:AddQueueItem.ItemInformation>
-                  </ui:AddQueueItem>
-                </Sequence>
-              </ActivityAction>
-            </ui:ForEachRow.Body>
-          </ui:ForEachRow>
-        </Sequence>
-      </ui:CommentOut.Body>
+    <Sequence DisplayName="excel to Fidelity Queue" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_33">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
-    <Sequence DisplayName="excel to excel to queue" sap:VirtualizedContainerService.HintSize="486,744" sap2010:WorkflowViewState.IdRef="Sequence_32">
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_Fidelity]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Input\InputData.xlsx" />
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Fidelity]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="452,471" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,298" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AddQueueItem TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="416,234" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="UnityBrokers_Fidelity">
+                <ui:AddQueueItem.ItemInformation>
+                  <InArgument x:TypeArguments="x:String" x:Key="Client Type">[CurrentRow("Client Type").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Assured Name">[CurrentRow("Assured Name").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Mobile Number">[CurrentRow("Mobile Number").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Email">[CurrentRow("Email").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Nationality">[CurrentRow("Nationality").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="DateofBirth">[CurrentRow("DateofBirth").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Age">[CurrentRow("Age").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Gender">[CurrentRow("Gender").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Chasis Number">[CurrentRow("Chasis Number").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Date of First Registration">[CurrentRow("Date of First Registration").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="License place of issue">[CurrentRow("License place of issue").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Place of registration">[CurrentRow("Place of registration").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="License issue date">[CurrentRow("License issue date").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Years without claim">[CurrentRow("Years without claim").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Agency Type">[CurrentRow("Agency Type").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Vehicle Modified">[CurrentRow("Vehicle Modified").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Valid insurance policy">[CurrentRow("Valid insurance policy").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Previous Policy type">[CurrentRow("Previous Policy type").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Emirates ID">[CurrentRow("Emirates ID").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Driving License No">[CurrentRow("Driving License No").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Expiry Date">[CurrentRow("Expiry Date").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Emirate">[CurrentRow("Emirate").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Profession">[CurrentRow("Profession").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Vehicle colour">[CurrentRow("Vehicle colour").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="TCF No">[CurrentRow("TCF No").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Engine Number">[CurrentRow("Engine Number").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="License issued authority">[CurrentRow("License issued authority").ToString]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="Previous policy expiry">[CurrentRow("Previous policy expiry").ToString]</InArgument>
+                </ui:AddQueueItem.ItemInformation>
+              </ui:AddQueueItem>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+      </ui:ForEachRow>
+    </Sequence>
+    <Sequence DisplayName="excel to Alliance queue" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_32">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="Main_dt" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -562,13 +553,14 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
     </Sequence>
-    <Sequence DisplayName="excel to Ins Queue" sap:VirtualizedContainerService.HintSize="486,674" sap2010:WorkflowViewState.IdRef="Sequence_29">
+    <Sequence DisplayName="excel to Ins Queue" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_29">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dt_InsHouse" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_InsHouse]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,120" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="Fields" WorkbookPath="Input\Insurance House Fields and files 1.xlsx" />
